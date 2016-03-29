@@ -43,7 +43,12 @@ nav a {
 	font-weight: bold;
 	float: right;
 }
-
+#splash {
+	background:url(../images/me.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding:10em 0;
+}
 #logo{	
 	width: 200px;
 	float: left;
