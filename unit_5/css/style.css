@@ -12,8 +12,9 @@ body{
 }
 
 header{
-	padding:0 200px;
-
+	background-color: #FFED74;
+	border: 1px black solid;
+	padding: 20px;
 }
 
 h1, h2, p {
@@ -35,15 +36,14 @@ p{
 }
 
 a {
-		color:	#cccccc;
-		text-decoration: none;
+	color:	#cccccc;
+	text-decoration: none;
 }
 
-nav a {
-	color: #acacac;
-	margin: auto;
-	float: right;
-	padding: 2em;
+nav {
+	background-color: #E8C66A;
+	border: 1px black solid;
+	padding: 20px;
 }
 
 .navlinks{
@@ -53,20 +53,9 @@ nav a {
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 2px;
-    /*border: none;*/
-}
-
-#splash {
-	background:url(../images/me.jpg)no-repeat center center scroll;
-	background-repeat:no-repeat;
-	background-size:cover;
-	height:750px;
-	padding:1em 0;
-}
-
-#logo{	
-	width: 13em;
-	float: left;
+	color: #acacac;
+	margin: auto;
+	float: right;
 }
 
 
@@ -79,25 +68,24 @@ nav a {
 	font-family: 'Montserrat', helvetica, sans-serif;
 	letter-spacing: 10px;
 }
+.portfolio-square{
+	background-color: #FFE2B8;
+	border: 1px black solid;
+	padding: 20px;
+}
+
 img{
-	width: 100%;
+	width: 18em;
 }
 
-.aboutme{
-
-
-.work{
+section{
+	background-color: #FFE2B8;
+	border: 1px black solid;
+	padding: 20px;
+}
+footer{
+	background-color: #FF957E;
+	border: 1px black solid;
+	padding: 20px;
 
 }
-
-.contactme{
-
-/*.clearfix:after {
-	display: block;
-	content: " ";
-	clear: both;
-	font-size: 0;
-	visibility: hidden;
-}*/
-
-	;
