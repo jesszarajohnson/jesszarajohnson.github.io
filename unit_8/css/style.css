@@ -1,0 +1,237 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+* { padding: 0;	margin: 0; box-sizing:border-box; }
+
+body{
+	background-color: white;
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-size: 16px; /*1em = 16px*/
+	line-height: 1.5;
+	text-align: center;
+}
+
+h1, h2, h4, p {
+	color: #454545;
+}
+
+h2{
+	text-transform: uppercase;
+	font-family: 'Montserrat', helvetica, sans-serif;
+	letter-spacing: .2em;
+}
+
+/*h3{
+	opacity: 0;
+}
+
+h3:hover {
+	opacity: 100;
+}*/
+
+h4{
+	text-transform: uppercase;
+	font-family: 'Montserrat', helvetica, sans-serif;
+	letter-spacing: .1em;
+}
+
+p{
+	font-size: 1em;
+	margin: 0 0 1.1em;
+	line-height: 1.5em;
+}
+
+a {
+	color:	#cccccc;
+	text-decoration: none;
+}
+
+nav {
+	padding: 2em;
+	float: right;
+}
+
+nav  a {
+	padding:0 2em;
+	font-family: 'Montserrat', helvetica, sans-serif;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: black;
+	margin: auto;
+    border: none;
+    display: inline-block;
+    -webkit-transition:opacity ease-in-out .15s;
+	-moz-transition:opacity ease-in-out .15s;
+	-o-transition:opacity ease-in-out .15s;
+	transition:opacity ease-in-out .15s;
+}
+
+nav a:hover {
+	opacity: 0.3
+}
+
+#splash {
+	background:url(../images/me.jpg)no-repeat center center scroll;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	height: 100vh;
+	padding:1em 0;
+}
+
+#logo{	
+	width: 13em;
+	float: left;
+}
+
+#slogan{
+	color: #000;
+	font-size: 3.5em;
+	text-align: center;
+	text-transform: uppercase;
+	margin:7em 0 0;
+	font-family: 'Montserrat', helvetica, sans-serif;
+	letter-spacing: .2em;
+	height: 50%;
+}
+img{
+	width: 100%;
+}
+
+section{
+	margin: 2em;
+	clear: both;
+}
+
+#work{
+	margin: 3em auto;
+	width: 1000px;
+}
+
+.portfolio-square{
+	float: center;
+	display: inline-block;
+	border: none;
+	margin: 1%;
+	width: 31%;
+	position: relative;
+}
+
+.portfolio-square img:hover {
+	opacity: 0.25;
+}
+
+.portfolio-square h3{
+	font-size: 1.2em;
+ 	position: absolute;
+ 	top: 47%;
+ 	left: 50%;
+	-webkit-transform:translateX(-50%);
+	-moz-transform:translateX(-50%);
+	-o-transform:translateX(-50%);
+	transform:translateX(-50%);
+	-webkit-transition:opacity ease-in-out .2s;
+	-moz-transition:opacity ease-in-out .2s;
+	-o-transition:opacity ease-in-out .2s;
+	transition:opacity ease-in-out .2s;
+	opacity: 0;
+}
+
+.portfolio-square:hover > h3{
+	opacity: 100;
+}
+
+#about-me{
+	width: 610px;
+	/*background-color: red;*/
+	display: block;
+	margin: auto;
+
+}
+
+#contact{
+	margin: auto;
+}
+
+hr{
+	display: block;
+	border: none;
+	height: 1px;
+	background-color: #bbb;
+	margin: 2em 0;
+}
+
+.clearfix:after {
+	display: block;
+	content: " ";
+	clear: both;
+	font-size: 0;
+	visibility: hidden;
+	height: 0;
+}
+
+@media only screen and (max-width:1667px){
+	#work{
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width:1350px){
+	#work{
+		width: 85%;
+	}
+
+}
+
+@media only screen and (max-width: 955px) {
+	#work{
+		width: 90%;
+	}
+
+	.portfolio-square{
+		width: 47%;
+	}
+}
+
+@media only screen and (max-width: 845px) {
+	nav a{
+		padding: .5em;
+		display: block;
+		text-align: right;
+	}
+
+	nav{
+		padding: 0 2em;
+		display: block;
+	}
+
+	#slogan{
+		font-size: 3em;
+	}
+
+	#about-me{
+		width: 80%;
+		display: block;
+		margin: auto;
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+	body{
+	font-size: 15px;
+	}
+	#work{
+		width: 95%;
+	}
+
+	.portfolio-square{
+		width: 99%;
+	}
+}
+
+
+
+
+
