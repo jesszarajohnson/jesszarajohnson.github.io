@@ -15,19 +15,11 @@ h1, h2, h4, p {
 	color: #454545;
 }
 
-h2{
+h2, h3{
 	text-transform: uppercase;
 	font-family: 'Montserrat', helvetica, sans-serif;
 	letter-spacing: .2em;
 }
-
-/*h3{
-	opacity: 0;
-}
-
-h3:hover {
-	opacity: 100;
-}*/
 
 h4{
 	text-transform: uppercase;
@@ -123,7 +115,7 @@ section{
 }
 
 .portfolio-square h3{
-	font-size: 1.2em;
+	letter-spacing: .1em;
  	position: absolute;
  	top: 47%;
  	left: 50%;
