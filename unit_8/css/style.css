@@ -34,7 +34,7 @@ p{
 }
 
 a {
-	color:	#cccccc;
+	color:	#A2A2A2;
 	text-decoration: none;
 }
 
@@ -102,31 +102,27 @@ section{
 }
 
 .portfolio-square{
-	float: center;
-	display: inline-block;
-	border: none;
-	margin: 1%;
-	width: 31%;
+	float: left;
+	padding: .5%;
+	width: 33.3333%;
 	position: relative;
 }
 
+
 .portfolio-square img:hover {
-	opacity: 0.25;
+	opacity: 0.3;
+	-webkit-transition:opacity ease-in-out .2s;
+	-moz-transition:opacity ease-in-out .2s;
+	-o-transition:opacity ease-in-out .2s;
+	transition:opacity ease-in-out .2s;
 }
 
 .portfolio-square h3{
 	letter-spacing: .1em;
  	position: absolute;
- 	top: 47%;
+ 	top: 50%;
  	left: 50%;
-	-webkit-transform:translateX(-50%);
-	-moz-transform:translateX(-50%);
-	-o-transform:translateX(-50%);
-	transform:translateX(-50%);
-	-webkit-transition:opacity ease-in-out .2s;
-	-moz-transition:opacity ease-in-out .2s;
-	-o-transition:opacity ease-in-out .2s;
-	transition:opacity ease-in-out .2s;
+	transform:translate(-50%, -50%);
 	opacity: 0;
 }
 
@@ -140,6 +136,10 @@ section{
 	display: block;
 	margin: auto;
 
+}
+
+#about-me p{
+	text-align: left;
 }
 
 #contact{
