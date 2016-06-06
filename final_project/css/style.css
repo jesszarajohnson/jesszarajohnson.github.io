@@ -1,0 +1,391 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+* { padding: 0;	margin: 0; box-sizing:border-box; }
+
+body{
+	background-color: white;
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-size: 15px; /*1em = 16px*/
+	line-height: 1.5;
+	text-align: center;
+}
+
+h1, h2, h4, p {
+	color: #454545;
+}
+
+h2, h3{
+	text-transform: uppercase;
+	font-family: 'Montserrat', helvetica, sans-serif;
+	letter-spacing: .2em;
+}
+
+h2{
+	padding: 1em 0;
+}
+
+h4{
+	text-transform: uppercase;
+	font-family: 'Montserrat', helvetica, sans-serif;
+	letter-spacing: .1em;
+}
+
+p{
+	font-size: 1em;
+	margin: 0 0 1.1em;
+	line-height: 1.5em;
+}
+
+a {
+	color:	#A2A2A2;
+	text-decoration: none;
+}
+
+nav {
+	padding: 2em;
+	float: right;
+	display: block;
+}
+
+nav  a {
+	padding:0 2em;
+	font-family: 'Montserrat', helvetica, sans-serif;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	color: rgb(232,232,232);
+	margin: auto;
+    border: none;
+    display: inline-block;
+    -webkit-transition:opacity ease-in-out .15s;
+	-moz-transition:opacity ease-in-out .15s;
+	-o-transition:opacity ease-in-out .15s;
+	transition:opacity ease-in-out .15s;
+}
+
+nav a:hover {
+	opacity: 0.3
+}
+
+header{
+
+}
+
+.dark a{
+	color: #454545;
+}
+
+
+#splash {
+	background:url(../images/me4.jpg)no-repeat center center scroll;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	height: 100vh;
+	padding:1em 0;
+}
+
+#logo{	
+	width: 5em;
+	float: left;
+	margin: 0 3em 0 3em;
+	padding-top: 2em;
+}
+
+#slogan{
+	color: rgb(232,232,232);
+	font-size: 3.5em;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 8em 0 0;
+	font-family: 'Montserrat', helvetica, sans-serif;
+	letter-spacing: .2em;
+	height: 50%;
+}
+img{
+	width: 100%;
+}
+
+#work{
+	margin: auto;
+	padding: 4em 0;
+	width: 1000px;
+}
+
+.portfolio-square{
+	float: left;
+	padding: .5%;
+	width: 33.3333%;
+	position: relative;
+}
+
+
+.portfolio-square img:hover {
+	opacity: 0.3;
+	-webkit-transition:opacity ease-in-out .2s;
+	-moz-transition:opacity ease-in-out .2s;
+	-o-transition:opacity ease-in-out .2s;
+	transition:opacity ease-in-out .2s;
+}
+
+.portfolio-square h3{
+	letter-spacing: .1em;
+	line-height: 1.5;
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+	transform:translate(-50%, -50%);
+	opacity: 0;
+}
+
+.portfolio-square:hover > h3{
+	opacity: 100;
+}
+
+#about-me{
+	background:url(../images/building.jpg)no-repeat center center scroll;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	display: block;
+	margin: auto;
+	padding: 3em;
+}
+
+#about-me h2, hr, h4{
+	color: rgb(232,232,232);
+	width: 610px;
+	margin: auto;
+}
+
+#about-me p{
+	text-align: left;
+	color: rgb(232,232,232);
+	width: 610px;
+	margin: auto;
+}
+
+#contact{
+	margin: auto;
+	padding-top: 2em;
+}
+
+#contactimg{
+	width: 30%;
+	margin: 3em;
+}
+
+hr{
+	display: block;
+	border: none;
+	height: 1px;
+	background-color: #bbb;
+	margin: 2em auto;
+}
+
+.project-nav{
+	font-size: 2em;
+	letter-spacing: .5em;
+	position: fixed;
+}
+
+#description{
+	text-align: left;
+	width: 35%;
+    float: left;
+    padding-right: 1em;
+    position: fixed;
+    margin: 1em 0 0 10em;
+}
+
+#photos{
+	width: 45%;
+	display: block;
+    position: relative;
+    float: right;
+    margin: 0 8em 0 2em;
+}
+
+.image{
+	margin: 1em;
+}
+
+footer{
+	/*text-align: center;*/
+	font-size: 1.5em;
+	float: right;
+	display: block;
+	margin-right: 2em; 
+	color: #454545;
+}
+
+footer a{
+	color: #454545;
+}
+
+#mobile {
+	display: none;
+	font-size: 2em;
+}
+
+.clearfix:after{
+	display: block;
+	content: " ";
+	clear: both;
+	font-size: 0;
+	visibility: hidden;
+	height: 0;
+}
+
+@media only screen and (max-width:1667px){
+	#work{
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width:1350px){
+	#work{
+		width: 70%;
+	}
+
+	#description{
+		width: 35%;
+	    margin: 1em 0 0 7em;
+	}
+
+	#photos{
+		width: 50%;
+	    margin: 0 3em 0 2em;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	#work{
+		width: 90%;
+	}
+
+	#description{
+		width: 25%;
+	    margin: 1em 0 0 3em;
+	}
+
+	#photos{
+		width: 60%;
+	    margin: 0 3em 0 2em;
+	}
+}
+
+@media only screen and (max-width: 922px) {
+	#contactimg{
+		width: 40%;
+	}
+
+}
+
+@media only screen and (max-width: 845px) {
+	#work{
+		width: 90%;
+	}
+
+	.portfolio-square{
+		width: 47%;
+	}
+	nav a{
+		padding: .5em;
+		display: block;
+		text-align: right;
+	}
+
+	nav{
+		padding: 1em 2em 0 0;
+		display: block;
+	}
+
+	#slogan{
+		font-size: 3em;
+	}
+
+	#about-me p{
+		width: 80%;
+		margin: auto;
+	}
+
+	hr{
+	width: 80%;
+	}
+
+	#contactimg{
+		width: 50%;
+	}
+
+	#description{
+		position: relative;
+		width: 85%;
+	}
+
+	#photos{
+		width: 85%;
+	    float: left;
+	    margin: 0 0 0 2em;
+	}
+	.project-nav{
+		position: relative;
+}
+}
+
+@media only screen and (max-width: 660px) {
+	#mobile {
+		display: block;
+	}
+	
+	nav a {
+		float: none;
+		width: auto;
+		padding: .25em 0;
+		display: none;
+	}
+
+	nav:hover a {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	body{
+	font-size: 15px;
+	}
+	#work{
+		width: 85%;
+	}
+
+	.portfolio-square{
+		width: 99%;
+	}
+	#about-me{
+		padding: 2em 1em;
+	}
+
+	#about-me h2, hr, h4{
+		width: 60%;
+	}
+
+	#description{
+		width: 90%;
+		 margin: 1em 0 0 2em;
+	}
+
+	#photos{
+		width: 90%;
+	    margin: 0 0 0 1em;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	#work{
+		width: 95%;
+	}
+
+	#contactimg{
+		width: 70%;
+	}
+}
