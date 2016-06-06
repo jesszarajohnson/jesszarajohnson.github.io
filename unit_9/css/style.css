@@ -67,6 +67,15 @@ nav a:hover {
 	opacity: 0.3
 }
 
+header{
+
+}
+
+.dark a{
+	color: #454545;
+}
+
+
 #splash {
 	background:url(../images/me4.jpg)no-repeat center center scroll;
 	background-repeat:no-repeat;
@@ -77,8 +86,10 @@ nav a:hover {
 }
 
 #logo{	
-	width: 13em;
+	width: 5em;
 	float: left;
+	margin: 0 3em 0 3em;
+	padding-top: 2em;
 }
 
 #slogan{
@@ -96,10 +107,9 @@ img{
 }
 
 #work{
-	margin: 3em auto;
-	padding-top: 4em;
+	margin: auto;
+	padding: 4em 0;
 	width: 1000px;
-	height: 100vh;
 }
 
 .portfolio-square{
@@ -133,17 +143,13 @@ img{
 }
 
 #about-me{
-	/*width: 610px;*/
 	background:url(../images/building.jpg)no-repeat center center scroll;
-	/*opacity: .7;*/
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-attachment: fixed;
 	display: block;
 	margin: auto;
-	height: 100vh;
-	padding-top: 3em;
-
+	padding: 3em;
 }
 
 #about-me h2, hr, h4{
@@ -177,10 +183,6 @@ hr{
 	margin: 2em auto;
 }
 
-header{
-	padding:1em 0;
-}
-
 .project-nav{
 	font-size: 2em;
 	letter-spacing: .5em;
@@ -209,8 +211,16 @@ header{
 }
 
 footer{
-	text-align: center;
+	/*text-align: center;*/
+	font-size: 1.5em;
+	float: right;
 	display: block;
+	margin-right: 2em; 
+}
+
+#mobile {
+	display: none;
+	font-size: 2em;
 }
 
 .clearfix:after{
@@ -230,12 +240,44 @@ footer{
 
 @media only screen and (max-width:1350px){
 	#work{
-		width: 85%;
+		width: 70%;
+	}
+
+	#description{
+		width: 35%;
+	    margin: 1em 0 0 7em;
+	}
+
+	#photos{
+		width: 50%;
+	    margin: 0 3em 0 2em;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	#work{
+		width: 90%;
+	}
+
+	#description{
+		width: 25%;
+	    margin: 1em 0 0 3em;
+	}
+
+	#photos{
+		width: 60%;
+	    margin: 0 3em 0 2em;
+	}
+}
+
+@media only screen and (max-width: 922px) {
+	#contactimg{
+		width: 40%;
 	}
 
 }
 
-@media only screen and (max-width: 955px) {
+@media only screen and (max-width: 845px) {
 	#work{
 		width: 90%;
 	}
@@ -243,9 +285,6 @@ footer{
 	.portfolio-square{
 		width: 47%;
 	}
-}
-
-@media only screen and (max-width: 845px) {
 	nav a{
 		padding: .5em;
 		display: block;
@@ -253,7 +292,7 @@ footer{
 	}
 
 	nav{
-		padding: 0 2em;
+		padding: 1em 2em 0 0;
 		display: block;
 	}
 
@@ -261,12 +300,49 @@ footer{
 		font-size: 3em;
 	}
 
-	#about-me{
+	#about-me p{
 		width: 80%;
-		display: block;
 		margin: auto;
 	}
 
+	hr{
+	width: 80%;
+	}
+
+	#contactimg{
+		width: 50%;
+	}
+
+	#description{
+		position: relative;
+		width: 85%;
+	}
+
+	#photos{
+		width: 85%;
+	    float: left;
+	    margin: 0 0 0 2em;
+	}
+	.project-nav{
+		position: relative;
+}
+}
+
+@media only screen and (max-width: 660px) {
+	#mobile {
+		display: block;
+	}
+	
+	nav a {
+		float: none;
+		width: auto;
+		padding: .25em 0;
+		display: none;
+	}
+
+	nav:hover a {
+		display: block;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -274,15 +350,40 @@ footer{
 	font-size: 15px;
 	}
 	#work{
-		width: 95%;
+		width: 85%;
 	}
 
 	.portfolio-square{
 		width: 99%;
 	}
+	#about-me{
+		padding: 2em 1em;
+	}
+
+	#about-me h2, hr, h4{
+		width: 60%;
+	}
+
+	#description{
+		width: 90%;
+		 margin: 1em 0 0 2em;
+	}
+
+	#photos{
+		width: 90%;
+	    margin: 0 0 0 1em;
+	}
 }
 
+@media only screen and (max-width: 400px) {
+	#work{
+		width: 95%;
+	}
 
+	#contactimg{
+		width: 70%;
+	}
+}
 
 
 
