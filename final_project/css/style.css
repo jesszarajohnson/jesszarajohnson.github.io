@@ -67,14 +67,9 @@ nav a:hover {
 	opacity: 0.3
 }
 
-header{
-
-}
-
 .dark a{
 	color: #454545;
 }
-
 
 #splash {
 	background:url(../images/me4.jpg)no-repeat center center scroll;
@@ -102,6 +97,7 @@ header{
 	letter-spacing: .2em;
 	height: 50%;
 }
+
 img{
 	width: 100%;
 }
@@ -118,7 +114,6 @@ img{
 	width: 33.3333%;
 	position: relative;
 }
-
 
 .portfolio-square img:hover {
 	opacity: 0.3;
@@ -334,6 +329,11 @@ footer a{
 }
 
 @media only screen and (max-width: 660px) {
+	#splash {
+	height: relative;
+	width: 100%;
+	}
+
 	#mobile {
 		display: block;
 	}
