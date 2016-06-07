@@ -86,7 +86,7 @@ header{
 }
 
 #logo{	
-	width: 5em;
+	width: 4.5em;
 	float: left;
 	margin: 0 3em 0 3em;
 	padding-top: 2em;
@@ -371,7 +371,7 @@ footer a{
 
 	#description{
 		width: 90%;
-		 margin: 1em 0 0 2em;
+		margin: 1em 0 0 2em;
 	}
 
 	#photos{
@@ -387,5 +387,31 @@ footer a{
 
 	#contactimg{
 		width: 70%;
+	}
+
+	#description{
+		width: 95%;
+		margin: 1em 0 0 1.5em;
+	}
+
+	#photos{
+		width: 95%;
+		margin: 0 0 0 .5em;
+	}
+
+	.image{
+	margin: 0em;
+	}
+
+}
+
+@media only screen and (max-width: 360px) {
+	#logo{	
+		width: 3.5em;
+		margin: 0 1em 0 1em;
+	}
+
+	#slogan{
+		font-size: 2em;
 	}
 }
