@@ -390,7 +390,6 @@ footer a{
 	#splash {
 		background:url(../images/me5.jpg)no-repeat center center scroll;
 		background-repeat:no-repeat;
-		background-size:cover;
 		background-attachment: fixed;
 		height: 100vh;
 	}
@@ -398,11 +397,9 @@ footer a{
 	#about-me{
 		background:url(../images/building2.jpg)no-repeat center center scroll;
 		background-repeat:no-repeat;
-		background-size:cover;
 		background-attachment: fixed;
 		display: block;
 		margin: auto;
-		padding: 3em;
 	}
 
 	#work{
