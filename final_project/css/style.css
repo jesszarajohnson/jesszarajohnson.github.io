@@ -389,14 +389,14 @@ footer a{
 @media only screen and (max-width: 400px) {
 	#splash {
 		background:url(../images/me5.jpg)no-repeat center center scroll;
-		background-repeat:no-repeat;
+		background-size:cover;
 		background-attachment: fixed;
 		height: 100vh;
 	}
 
 	#about-me{
 		background:url(../images/building2.jpg)no-repeat center center scroll;
-		background-repeat:no-repeat;
+		background-size:cover;
 		background-attachment: fixed;
 		display: block;
 		margin: auto;
