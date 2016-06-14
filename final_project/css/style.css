@@ -387,6 +387,14 @@ footer a{
 }
 
 @media only screen and (max-width: 400px) {
+	#splash {
+		background:url(../images/me5.jpg)no-repeat center center scroll;
+	}
+
+	#about-me{
+		background:url(../images/building2.jpg)no-repeat center center scroll;
+	}
+
 	#work{
 		width: 95%;
 	}
